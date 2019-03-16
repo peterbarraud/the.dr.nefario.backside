@@ -1,0 +1,4 @@
+mariadb.min/data/*.*
+mariadb.min/data/ib*
+mariadb.min/data/aria_log_control*
+mdb.running

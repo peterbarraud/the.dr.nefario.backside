@@ -1,14 +1,23 @@
 # Get started with the Dr Nefario Backside
 
-Clone this repo
-
 ## Create mariadb Database
 1. To start mariadb, double-click `start.db.bat`
-2. Create a database `create database <database-name>`
-3. Create a db user with all permissions on this database
-``create user '<user name>'@'localhost' identified by '<password>';``
-``grant all privileges on <database-name>.* to 'newuser'@'localhost';``
-4. Put this into the `services/datainfo.json`
+1. To login as root user, double-click `login.root.bat`
+1. Create a database `create database <database-name>`
+1. Create a db user with all permissions on this database
+```
+create user '<user name>'@'localhost' identified by '<password>';
+grant all privileges on <database-name>.* to 'newuser'@'localhost';
+```
+1. Put this into the `services/datainfo.json`
+
+## Log in as User
+1. Open the command line in the main folder
+*Note*: Double-clicking the login.user.bat doesn't work
+1. Execute the following command:
+```
+login.user -u <username> -p<password> -D <databse name>
+```
 
 ## Build the data-object model
 For each object that you need, create a table and the corresponding .php object and object collection
@@ -32,4 +41,3 @@ See `appusercollection.php` for example
 
 ## Build the RestFUL API
 In the services folder, you should have `rest.api.php`
-
