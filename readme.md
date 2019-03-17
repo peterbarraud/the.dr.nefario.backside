@@ -57,8 +57,8 @@ function validateuser($username, $password)
 ```
 ## Start the RestFUL server
 1. In the main folder, double-click `start.php.bat`
-1. To test the php server is running, go to: `[http://localhost:8089/services/phpinfo.php](http://localhost:8089/services/phpinfo.php)`
-1. To test the rest.api is working, go to: `[http://localhost:8089/services/rest.api.php/testrest/[some param value]](http://localhost:8089/services/rest.api.php/testrest/justtest`
+1. To test the php server is running, go to: [http://localhost:8089/services/phpinfo.php](http://localhost:8089/services/phpinfo.php)
+1. To test the rest.api is working, go to: [http://localhost:8089/services/rest.api.php/testrest/[some param value]](http://localhost:8089/services/rest.api.php/testrest/justtest)
 The browser should display the json of what you entered as the parameter to testrest
 
 ## 
