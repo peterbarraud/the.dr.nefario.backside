@@ -34,10 +34,31 @@ create table <table name> (
 In the services/objectlayer folder, create the php object
 Name of the php object MUST be identical to the table and must inherit from `objectbase`
 See `appuser.php` for example
-3. Create PHP object collection
+1. Create PHP object collection
 In the objectlayer folder, create the php objectcollection
 Name of the php objectcollection MUST be identical to the table suffixed with `collection` and must inherit from `objectcollectionbase`
 See `appusercollection.php` for example
 
 ## Build the RestFUL API
 In the services folder, you should have `rest.api.php`
+
+For each rest function that you need, you create one `PHP` function
+
+The arguments to function are the parameters on the rest call
+
+Eg: If you have a rest call `validateuser` as such:
+```
+http://localhost:8080/services/rest.api.php/validateuser/pokerj/floop
+```
+
+You catch this with a function in rest.api.php:
+```
+function validateuser($username, $password)
+```
+## Start the RestFUL server
+1. In the main folder, double-click `start.php.bat`
+1. To test the php server is running, go to: `http://localhost:8089/services/phpinfo.php`
+1. To test the rest.api is working, go to: `http://localhost:8089/services/rest.api.php/testrest/[some param value]`
+The browser should display the json of what you entered as the parameter to testrest
+
+## 

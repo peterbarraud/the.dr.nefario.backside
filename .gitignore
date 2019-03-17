@@ -1,4 +1,10 @@
-mariadb.min/data/*.*
-mariadb.min/data/ib*
-mariadb.min/data/aria_log_control*
+mariadb.min/data/*
+!mariadb.min/data/mysql/
+!mariadb.min/data/performance_schema/
 mdb.running
+services/objectlayer/*
+!services/objectlayer/appuser.php
+!services/objectlayer/appuserappusercollection.php
+!services/objectlayer/objectbase.php
+!services/objectlayer/datalayer.php
+!services/objectlayer/objectcollectionbase.php
