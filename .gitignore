@@ -8,3 +8,4 @@ services/objectlayer/*
 !services/objectlayer/objectbase.php
 !services/objectlayer/datalayer.php
 !services/objectlayer/objectcollectionbase.php
+services/*.log
