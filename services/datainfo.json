@@ -1,6 +1,6 @@
 {
 	"server": "localhost",
-	"username": "gapeterb",
-	"password": "pokerj07",
-	"database": "netritr"
+	"username": "<databse user name>",
+	"password": "<databse user password>",
+	"database": "<database name>"
 }
