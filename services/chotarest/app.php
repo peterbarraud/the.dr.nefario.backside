@@ -15,7 +15,7 @@
       if (is_callable($callback)){
         call_user_func_array($callback, $callback_parts);
       } else {
-        echo "<div style='background-color:#9baedd;color:#723014;font-size:30px;padding:20px;border:5px solid #723014;'>Error: We don't have any such RestFUL API. Please try something else or let us know.</div>";
+        echo "<div style='background-color:#9baedd;color:red;font-size:30px;padding:20px;border:5px solid red;'>Error: We don't have any such RestFUL API. Please try something else or let us know.</div>";
       }      
     }
   }
